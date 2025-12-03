@@ -7,13 +7,12 @@ import { PhotoCaptureGame } from "@/components/photo-capture-game"
 import { TriviaGame } from "@/components/trivia-game"
 import { LyricGame } from "@/components/lyric-game"
 import { DoodleJumpGame } from "@/components/doodle-jump-game"
-import { CameraFilterGame } from "@/components/camera-filter-game"
 import { ProgressTracker } from "@/components/progress-tracker"
 import { Button } from "@/components/ui/button"
 import { Trophy } from "lucide-react"
 import { Dialog, DialogContent } from "@/components/ui/dialog"
 
-type GameType = "selector" | "photo" | "trivia" | "lyric" | "doodle" | "filter" | null
+type GameType = "selector" | "photo" | "trivia" | "lyric" | "doodle" | null
 
 export default function Home() {
   const [currentGame, setCurrentGame] = useState<GameType>(null)
@@ -75,7 +74,6 @@ export default function Home() {
             {currentGame === "trivia" && <TriviaGame onComplete={handleGameComplete} />}
             {currentGame === "lyric" && <LyricGame onComplete={handleGameComplete} />}
             {currentGame === "doodle" && <DoodleJumpGame onComplete={handleGameComplete} />}
-            {currentGame === "filter" && <CameraFilterGame onComplete={handleGameComplete} />}
           </DialogContent>
         </Dialog>
       </div>

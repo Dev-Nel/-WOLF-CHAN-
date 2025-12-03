@@ -32,7 +32,7 @@ export function DoodleJumpGame({ onComplete }: DoodleJumpGameProps) {
   const CANVAS_WIDTH = 400
   const CANVAS_HEIGHT = 600
   const GRAVITY = 0.5
-  const JUMP_STRENGTH = -12
+  const JUMP_STRENGTH = -16.8
   const PLATFORM_WIDTH = 80
   const PLATFORM_HEIGHT = 15
   const MOVE_SPEED = 7

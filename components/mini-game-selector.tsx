@@ -2,10 +2,10 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Camera, Brain, Music, Gamepad2, Sparkles } from "lucide-react"
+import { Camera, Brain, Music, Gamepad2 } from "lucide-react"
 
 interface MiniGameSelectorProps {
-  onGameSelect: (game: "photo" | "trivia" | "lyric" | "doodle" | "filter") => void
+  onGameSelect: (game: "photo" | "trivia" | "lyric" | "doodle") => void
 }
 
 export function MiniGameSelector({ onGameSelect }: MiniGameSelectorProps) {
@@ -38,13 +38,6 @@ export function MiniGameSelector({ onGameSelect }: MiniGameSelectorProps) {
       icon: Gamepad2,
       color: "bg-destructive",
     },
-    {
-      id: "filter" as const,
-      name: "Filter Fun",
-      description: "Try fun camera filters for 2 mins",
-      icon: Sparkles,
-      color: "bg-purple-500",
-    },
   ]
 
   return (
@@ -56,7 +49,7 @@ export function MiniGameSelector({ onGameSelect }: MiniGameSelectorProps) {
         </CardHeader>
 
         <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {games.map((game) => {
               const Icon = game.icon
               return (
