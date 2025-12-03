@@ -1,0 +1,225 @@
+export const lyricQuestions: Record<
+  string,
+  Array<{ song: string; lyric: string; answer: string; audioUrl?: string }>
+> = {
+  Pop: [
+    {
+      song: "Shape of You - Ed Sheeran",
+      lyric: "I'm in love with the...",
+      answer: "shape of you",
+      audioUrl: "/audio/shape-of-you.mp3",
+    },
+    {
+      song: "Shake It Off - Taylor Swift",
+      lyric: "Cause the players gonna play, play, play, play, play, And the haters gonna...",
+      answer: "hate, hate, hate, hate, hate",
+      audioUrl: "/audio/shake-it-off.mp3",
+    },
+    {
+      song: "Happy - Pharrell Williams",
+      lyric: "Clap along if you feel like a room without a...",
+      answer: "roof",
+      audioUrl: "/audio/happy.mp3",
+    },
+    {
+      song: "Blinding Lights - The Weeknd",
+      lyric: "I've been trying to call, I've been on my own for...",
+      answer: "long enough",
+      audioUrl: "/audio/blinding-lights.mp3",
+    },
+    {
+      song: "Rolling in the Deep - Adele",
+      lyric: "We could have had it...",
+      answer: "all",
+      audioUrl: "/audio/rolling-in-the-deep.mp3",
+    },
+    {
+      song: "Uptown Funk - Mark Ronson ft. Bruno Mars",
+      lyric: "Don't believe me, just...",
+      answer: "watch",
+      audioUrl: "/audio/uptown-funk.mp3",
+    },
+    {
+      song: "Someone Like You - Adele",
+      lyric: "Never mind, I'll find someone like...",
+      answer: "you",
+      audioUrl: "/audio/someone-like-you.mp3",
+    },
+  ],
+  "K-Pop": [
+    {
+      song: "Dynamite - BTS",
+      lyric: "Cause I, I, I'm in the stars tonight, So watch me bring the fire and set the...",
+      answer: "night alight",
+      audioUrl: "/audio/dynamite.mp3",
+    },
+    {
+      song: "Gangnam Style - PSY",
+      lyric: "Oppan...",
+      answer: "Gangnam Style",
+      audioUrl: "/audio/gangnam-style.mp3",
+    },
+    {
+      song: "How You Like That - BLACKPINK",
+      lyric: "Look at you, now look at me, Look at you, now look at me, Look at you, now look at...",
+      answer: "me",
+      audioUrl: "/audio/how-you-like-that.mp3",
+    },
+    {
+      song: "Boy With Luv - BTS ft. Halsey",
+      lyric: "Oh my my my, oh my my my, You got me high so...",
+      answer: "fast",
+      audioUrl: "/audio/boy-with-luv.mp3",
+    },
+    {
+      song: "Kill This Love - BLACKPINK",
+      lyric: "Look at me, look at you, Who's gonna...",
+      answer: "cry first",
+      audioUrl: "/audio/kill-this-love.mp3",
+    },
+    {
+      song: "Idol - BTS",
+      lyric: "You can't stop me lovin'...",
+      answer: "myself",
+      audioUrl: "/audio/idol.mp3",
+    },
+    {
+      song: "Ddu-Du Ddu-Du - BLACKPINK",
+      lyric: "Hit you with that ddu-du ddu-du...",
+      answer: "du",
+      audioUrl: "/audio/ddu-du-ddu-du.mp3",
+    },
+  ],
+  "R&B": [
+    {
+      song: "No Scrubs - TLC",
+      lyric: "I don't want no...",
+      answer: "scrubs",
+      audioUrl: "/audio/no-scrubs.mp3",
+    },
+    {
+      song: "Crazy in Love - Beyoncé",
+      lyric: "Got me looking so crazy right now, your love's got me looking so crazy right...",
+      answer: "now",
+      audioUrl: "/audio/crazy-in-love.mp3",
+    },
+    {
+      song: "Say My Name - Destiny's Child",
+      lyric: "Say my name, say my name, when no one is...",
+      answer: "around you",
+      audioUrl: "/audio/say-my-name.mp3",
+    },
+    {
+      song: "Finesse - Bruno Mars",
+      lyric: "We out here drippin' in...",
+      answer: "finesse",
+      audioUrl: "/audio/finesse.mp3",
+    },
+    {
+      song: "Blinding Lights - The Weeknd",
+      lyric: "I said, ooh, I'm blinded by the...",
+      answer: "lights",
+      audioUrl: "/audio/blinding-lights-rnb.mp3",
+    },
+    {
+      song: "Un-Break My Heart - Toni Braxton",
+      lyric: "Un-break my heart, say you love me...",
+      answer: "again",
+      audioUrl: "/audio/unbreak-my-heart.mp3",
+    },
+    {
+      song: "No Diggity - Blackstreet",
+      lyric: "I like the way you...",
+      answer: "work it",
+      audioUrl: "/audio/no-diggity.mp3",
+    },
+  ],
+  Sad: [
+    {
+      song: "Someone You Loved - Lewis Capaldi",
+      lyric: "Now the day bleeds into nightfall, And you're not here to get me through it...",
+      answer: "all",
+      audioUrl: "/audio/someone-you-loved.mp3",
+    },
+    {
+      song: "The Scientist - Coldplay",
+      lyric: "Tell me your secrets and ask me your...",
+      answer: "questions",
+      audioUrl: "/audio/the-scientist.mp3",
+    },
+    {
+      song: "When I Was Your Man - Bruno Mars",
+      lyric: "My pride, my ego, my needs and my...",
+      answer: "selfish ways",
+      audioUrl: "/audio/when-i-was-your-man.mp3",
+    },
+    {
+      song: "Say Something - A Great Big World",
+      lyric: "Say something, I'm giving up on...",
+      answer: "you",
+      audioUrl: "/audio/say-something.mp3",
+    },
+    {
+      song: "Hurt - Christina Aguilera",
+      lyric: "I'm sorry for blaming you for everything I just couldn't...",
+      answer: "do",
+      audioUrl: "/audio/hurt.mp3",
+    },
+    {
+      song: "All Too Well - Taylor Swift",
+      lyric: "And I might be okay, but I'm not...",
+      answer: "fine at all",
+      audioUrl: "/audio/all-too-well.mp3",
+    },
+    {
+      song: "Fix You - Coldplay",
+      lyric: "When you try your best but you don't...",
+      answer: "succeed",
+      audioUrl: "/audio/fix-you.mp3",
+    },
+  ],
+  Reggae: [
+    {
+      song: "One Love - Bob Marley",
+      lyric: "One love, one...",
+      answer: "heart",
+      audioUrl: "/audio/one-love.mp3",
+    },
+    {
+      song: "No Woman, No Cry - Bob Marley",
+      lyric: "No woman, no...",
+      answer: "cry",
+      audioUrl: "/audio/no-woman-no-cry.mp3",
+    },
+    {
+      song: "Three Little Birds - Bob Marley",
+      lyric: "Don't worry about a...",
+      answer: "thing",
+      audioUrl: "/audio/three-little-birds.mp3",
+    },
+    {
+      song: "Redemption Song - Bob Marley",
+      lyric: "Emancipate yourselves from mental...",
+      answer: "slavery",
+      audioUrl: "/audio/redemption-song.mp3",
+    },
+    {
+      song: "Is This Love - Bob Marley",
+      lyric: "Is this love, is this love, is this love that I'm...",
+      answer: "feeling",
+      audioUrl: "/audio/is-this-love.mp3",
+    },
+    {
+      song: "Buffalo Soldier - Bob Marley",
+      lyric: "Buffalo Soldier, Dreadlock...",
+      answer: "Rasta",
+      audioUrl: "/audio/buffalo-soldier.mp3",
+    },
+    {
+      song: "Stir It Up - Bob Marley",
+      lyric: "Stir it up, little darling, stir it...",
+      answer: "up",
+      audioUrl: "/audio/stir-it-up.mp3",
+    },
+  ],
+}
